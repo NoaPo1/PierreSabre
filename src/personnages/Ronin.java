@@ -17,7 +17,7 @@ public class Ronin extends Humain{
 		this.honneur = honneur;
 	}
 	
-	void donner(Commerçant beneficiaire) {
+	public void donner(Commerçant beneficiaire) {
 		
         int don = getArgent() / 10;
         
@@ -32,7 +32,7 @@ public class Ronin extends Humain{
         augmenterHonneur();
 	}
 	
-	public void augmenterHonneur() {
+	private void augmenterHonneur() {
         honneur++;
         parler("Mon honneur est maintenant de " + honneur + " !");
     }
