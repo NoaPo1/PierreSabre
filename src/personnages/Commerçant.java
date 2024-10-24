@@ -1,6 +1,6 @@
 package personnages;
 
-public class Commerçant  extends Humain{
+public class Commerçant extends Humain{
 	public Commerçant(String nom, int argent, String boisson) {
 		super(nom,argent, boisson);
 		
@@ -15,7 +15,7 @@ public class Commerçant  extends Humain{
 	
 	public void recevoir(int argent){
 		this.gagnerArgent(argent);
-		parler("Merci pour les "+ argent + " pièce"); 
+		parler("Merci pour les "+ argent + " pièce");
 		
 	}
 	
